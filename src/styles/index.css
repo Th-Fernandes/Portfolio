@@ -178,6 +178,32 @@ ul {
 
 }
 
+/* FOOTER */
+
+footer {
+  background-color: var(--primary);
+  padding: 24px 16px;
+}
+
+footer .content {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+
+footer .content > h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+
+footer .developer-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* === MEDIA QUERIES === */
 
 /* PRESENTATION SECTION */
@@ -239,4 +265,14 @@ ul {
     flex-direction: row;
   }
 }  
+}
+
+/* footer */
+footer .content > h2 {
+  text-align: center;
+}
+
+footer .developer-infos {
+  flex-direction: row;
+  justify-content: center;
 }
