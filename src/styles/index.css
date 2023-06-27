@@ -15,3 +15,98 @@ html {
   font-family: 'Prompt', sans-serif;
   line-height: 35px;
 }
+
+/* PRESENTATION SECTION */
+
+.presentation-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.presentation-section .about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: min(100%, 594px);
+  padding-inline: 1rem;
+  text-align: justify;
+}
+
+.presentation-section .about-me .about-me__content > span {
+  font-size: 18px;
+}
+
+.presentation-section .about-me .about-me__content > h1 {
+  font-size: 3.5rem;
+  font-family: 'Anton', sans-serif;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+.presentation-section .about-me .about-me__content > h1 > span {
+  display: flex;
+  gap: 12px;
+}
+
+.presentation-section .about-me .about-me__content > h1 > span > img {
+  width: 1em;
+}
+
+.presentation-section .about-me .external-links-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  list-style-type: none;
+}
+
+.presentation-section .about-me .external-links-btns .external-links-btns__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-width: 150px;
+  padding: 4px 16px;
+  border: 1px solid var(--black-400);
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.presentation-section .about-me .external-links-btns .external-links-btns__btn:hover {
+  background-color: var(--black-400);
+  color: #ffffff;
+}
+/* === MEDIA QUERIES === */
+
+/* PRESENTATION SECTION */
+ 
+@media(min-width: 500px) {
+  .presentation-section .about-me {
+    gap: 32px;
+  }
+
+  .presentation-section .about-me .external-links-btns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .presentation-section .about-me .about-me__content > h1 {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 32px;
+  } 
+}
+
+@media(min-width: 1024px) {
+  .presentation-section .about-me .about-me__content > h1 {
+    font-size: 96px;
+    line-height:96px;
+  }
+}
