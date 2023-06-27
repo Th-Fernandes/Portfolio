@@ -1,3 +1,20 @@
-import { createIcons, icons } from '../../node_modules/lucide/dist/esm/lucide.js';
+import { 
+  createIcons, 
+  Github, 
+  Linkedin, 
+  FileText, 
+  ExternalLink
+} from '../../node_modules/lucide/dist/esm/lucide.js';
 
-createIcons({ icons });
+createIcons({
+  attrs: {
+    'stroke-width': 2,
+    stroke: '#000000'
+  },
+  icons: {
+    Github,
+    Linkedin,
+    FileText,
+    ExternalLink
+  }
+});
