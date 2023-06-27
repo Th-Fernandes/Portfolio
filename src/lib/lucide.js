@@ -9,7 +9,7 @@ import {
 createIcons({
   attrs: {
     'stroke-width': 2,
-    stroke: '#000000'
+    // stroke: '#000000'
   },
   icons: {
     Github,
