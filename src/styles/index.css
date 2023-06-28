@@ -143,12 +143,7 @@ ul {
 }
 
 .projects-section .project-actions-btns .project-actions-btns_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  gap: 12px;
-  padding: 4px 16px;
   background-color: transparent;
   border: 1px solid var(--black-400);
   border-radius: 0.5rem;
@@ -157,6 +152,15 @@ ul {
   font-family: 'Prompt', sans-serif;
   cursor: pointer;
   transition: background-color 0.5s ease;
+}
+
+.projects-section .project-actions-btns .project-actions-btns_btn > a{
+  padding: 4px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  gap: 12px;
 }
 
 .projects-section .project-actions-btns .project-actions-btns_btn:hover {
@@ -169,6 +173,10 @@ ul {
   color: #ffffff
 }
 
+.projects-section .project-actions-btns .project-actions-btns_btn.github-btn > a {
+  color: #ffffff;
+}
+
 .projects-section .project-actions-btns .github-btn:hover {
   background-color:  #474747;
 
@@ -179,6 +187,10 @@ ul {
 footer {
   background-color: var(--primary);
   padding: 24px 16px;
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 footer .content {
