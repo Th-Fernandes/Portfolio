@@ -6,6 +6,7 @@
 
 :root {
   --primary: #EFE6E8;
+  --primary-500:  #e1d0d4;
   --black-300: #333333;
   --black-400: #242424;
   --black-600: #230007;
@@ -98,13 +99,10 @@ ul {
 }
 
 .presentation-section .about-me .external-links-btns .external-links-btns__btn:hover {
-  background-color: var(--black-400);
-  color: #ffffff;
+  background-color: var(--primary-500);
+
 }
 
-.presentation-section .about-me .external-links-btns .external-links-btns__btn:hover > a {
-  color: #ffffff;
-}
 
 /* Projects section */
 .projects-section {
@@ -159,12 +157,10 @@ ul {
   font-family: 'Prompt', sans-serif;
   cursor: pointer;
   transition: background-color 0.5s ease;
-  transition: color 0.5s ease;
 }
 
 .projects-section .project-actions-btns .project-actions-btns_btn:hover {
-  background-color: var(--black-400);
-  color: #ffffff;
+  background-color: #f0f0f0;
 }
 
 
